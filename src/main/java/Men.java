@@ -1,27 +1,27 @@
 import java.io.Serializable;
 
-public class Student implements Serializable{
-    private static final long serialVersionUID = 1234L; //!!! private static final long serialVersionUID
+public class Men implements Serializable{
+    private static final long serialVersionUID = 1234L;  //!!! private static final long serialVersionUID
     private String name;
     private int age;
-   transient private String password;
+    transient private String password;
   /*  private enum  cours {
         FIRST,SECOND
     };*/
 
-private int cours;
-private float stipend;
+    private int cours;
+//    private float stipend=100f;
 
-    public Student() {
+    public Men() {
     }
 
-    public Student(String name, int age, String password) {
+    public Men(String name, int age, String password) {
         this.name = name;
         this.age = age;
         this.password = password;
     }
 
-    public Student(String name, int age, String password, int cours) {
+    public Men(String name, int age, String password, int cours) {
         this.name = name;
         this.age = age;
         this.password = password;
@@ -30,7 +30,7 @@ private float stipend;
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "Men{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", password='" + password + '\'' +
